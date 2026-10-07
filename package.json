@@ -1,0 +1,21 @@
+{
+  "name": "laura-personal-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Laura's personal blog — Next.js frontend + Strapi CMS monorepo",
+  "workspaces": [
+    "apps/web",
+    "apps/cms"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=web",
+    "dev:cms": "npm run develop --workspace=cms",
+    "build:web": "npm run build --workspace=web",
+    "build:cms": "npm run build --workspace=cms",
+    "start:web": "npm run start --workspace=web",
+    "start:cms": "npm run start --workspace=cms"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
